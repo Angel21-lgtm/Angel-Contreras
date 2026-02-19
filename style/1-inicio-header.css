@@ -86,7 +86,7 @@ h1::after {
     height: 25px;
 }
 
-.seccion-header > article p span {
+.secciones-y-articulos-contenedores > article p span {
     color: var(--verde);
     font-weight: 900;
     font-size: xx-large;
