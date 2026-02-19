@@ -2,6 +2,7 @@
 
 
 const main = () => {
+    // Cursor
     const cursor = document.querySelector("#cursor");
     const body = document.querySelector("body");
 
@@ -41,6 +42,24 @@ const main = () => {
 
         }, 10);
     });
+
+    // scroll
+    const scroll = () => {
+        const elementos = document.querySelectorAll(".animacion-scroll-left");
+
+        window.addEventListener("scroll", () => {
+            elementos.forEach(elemento => {
+                const propiedades = elemento.getBoundingClientRect();
+                if(!(propiedades.top < window.innerHeight)) {
+                    elemento.classList.remove("translate-y-opacity-left");
+                } else {
+                    elemento.classList.add("translate-y-opacity-left");
+                }
+            });
+        });
+    }
+
+    scroll();
 }
 
 main();
