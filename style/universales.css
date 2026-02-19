@@ -23,7 +23,6 @@ body {
     background-color: var(--negro);
     background-image: linear-gradient(to right, var(--gris) 1px, transparent 1px), linear-gradient(to bottom, var(--gris) 1px, transparent 1px);
     background-size: 40px 40px;
-    overflow-x: hidden;
 }
 
 #inicio,
@@ -43,6 +42,7 @@ h3 {
     padding: 10px;
     font-weight: 900;
     position: relative;
+    font-size: 3rem;
 }
 
 h1,
@@ -52,6 +52,10 @@ p,
 a,
 button {
     color: var(--blanco);
+}
+
+p {
+    font-size: x-large;
 }
 
 a, button {

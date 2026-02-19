@@ -71,16 +71,11 @@ h1,
     position: relative;
 }
 
-h1 {
-    font-size: 3rem;
-}
-
 h1::after {
     content: attr(data-text);
     padding: 1.5rem 1.5rem 1.5rem 0;
     max-width: 400px;
     height: 100%;
-    font-size: 3rem;
     position: absolute;
     left: 0;
     bottom: -45%;
@@ -93,10 +88,6 @@ h1::after {
     z-index: -1;
 }
 
-.seccion-header > article p {
-    font-size: x-large;
-}
-
 .saludo, .saludo img {
     display: inline-block;
     width: 40px;
@@ -106,7 +97,7 @@ h1::after {
 .seccion-header > article p span {
     color: var(--verde);
     font-weight: 900;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 /* Imágen de presentación del header */
