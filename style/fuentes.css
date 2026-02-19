@@ -1,0 +1,35 @@
+/* FUENTES DE LOS DISTINTOS TEXTOS */
+
+/* Fuente de los encabezados */
+@font-face {
+    font-family: "Encabezados";
+    src: url("../fuentes/Oswald/static/Oswald-Bold.ttf");
+}
+
+h1 {
+    font-family: "Encabezados";
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+
+/* Fuente de los párrafos */
+@font-face {
+    font-family: "Párrafos";
+    src: url("../fuentes/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+p {
+    font-family: "Párrafos";
+    letter-spacing: 3px;
+}
+
+/* Fuente de los botones i links (<a></a> y <button></button> */
+@font-face {
+    font-family: "Links y Botones";
+    src: url("../fuentes/Roboto/static/Roboto-Bold.ttf");
+}
+
+a, button {
+    font-family: "Links y Botones";
+    letter-spacing: 1px;
+}

@@ -1,0 +1,166 @@
+/* ESTILOS DEL ENCABEZADO DE LA WEB (header) */
+
+/* Etiqueta header */
+#inicio {
+    padding: 8rem 0 8rem 0;
+}
+
+/* Etiqueta svg */
+.svg-cabecera {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 8rem;
+}
+
+/* Artículo de publicidad aside */
+.mis-negocios {
+    position: fixed;
+    left: 0;
+    top: 10px;
+    width: 100px;
+    height: 150px;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.el-santuario-carnivoro {
+    font-size: smaller;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -35%;
+    width: 150%;
+    transform: rotate(34deg);
+    background-color: rgb(34, 151, 34);
+    text-align: center;
+}
+
+.madre-tierra {
+    font-size: smaller;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: -26%;
+    width: 150%;
+    transform: rotate(-25deg);
+    box-shadow: 0 -5px 10px var(--negro);
+    background-color: var(--verde);
+    text-align: center;
+}
+
+/* Sección principal del header */
+.seccion-header {
+    max-width: 1200px;
+    padding: 1rem;
+    margin: auto;
+    gap: 10px;
+}
+
+.seccion-header > article {
+    padding: 1rem;
+    max-width: 800px;
+    gap: 10px;
+}
+
+h1, 
+.seccion-header > article p {
+    padding: 1.5rem 1.5rem 1.5rem 0;
+    max-width: 400px;
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h1::after {
+    content: attr(data-text);
+    padding: 1.5rem 1.5rem 1.5rem 0;
+    max-width: 400px;
+    height: 100%;
+    font-size: 3rem;
+    position: absolute;
+    left: 0;
+    bottom: -45%;
+    transform: scaleY(-1);
+    filter: blur(1px);
+    opacity: 0.4;
+    mask-image: linear-gradient(to bottom,rgba(0,0,0,0.4),rgba(0,0,0,0));
+    -webkit-mask-image: linear-gradient(to bottom,rgba(0,0,0,0.4), rgba(0,0,0,0));
+    pointer-events: none;
+    z-index: -1;
+}
+
+.seccion-header > article p {
+    font-size: x-large;
+}
+
+.saludo, .saludo img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.seccion-header > article p span {
+    color: var(--verde);
+    font-weight: 900;
+    font-size: x-large;
+}
+
+/* Imágen de presentación del header */
+.imagen-principal-header {
+    max-width: 400px;
+    height: auto;
+    position: relative;
+}
+
+.imagen-principal-header img {
+    max-width: 400px;
+    height: 50%;
+    display: block;
+}
+
+/* Lista de redes sociales */
+.lista-redes-sociales {
+    gap: 10px;
+    padding-bottom: 5px;
+}
+
+.lista-redes-sociales > li, 
+.lista-redes-sociales > li > a {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5px;
+    background-color: var(--gris);
+} 
+
+.lista-redes-sociales > li > a > img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Estilos del nav */
+nav, 
+nav > ul {
+    position: fixed;
+    left: 15%;
+    bottom: 5px;
+    width: 70%;
+    z-index: 999;
+}
+
+nav > ul {
+    padding: 1rem 0.5rem;
+    gap: 10px;
+}
+
+.link-nav {
+    background-color: var(--negro);
+    box-shadow: 0 0 5px 0 var(--gris);
+    display: inline-block;
+    padding: 1rem 10px;
+    border-radius: 15px;
+    position: relative;
+}

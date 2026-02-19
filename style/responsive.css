@@ -1,0 +1,19 @@
+/* ESTILOS RESPONSIVOS PARA LA WEB CON DIFERENTES RESOLUCIONES */
+
+/* 1. Móviles pequeños (y base) - < 480px */
+@media (min-width: 320px) and (max-width: 479px) {}
+
+/* 2. Móviles grandes / Teléfonos apaisados - 480px a 767px */
+@media (min-width: 480px) and (max-width: 767px) {}
+
+/* 3. Tablets / Ipads / Dispositivos pequeños - 768px a 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* 4. Portátiles / Laptops pequeños / Escritorio horizontal - 1025px a 1200px */
+@media (min-width: 1025px) and (max-width: 1200px) {}
+
+/* 5. Escritorio estándar / Monitores FHD - 1201px a 1535px */
+@media (min-width: 1201px) and (max-width: 1535px) {}
+
+/* 6. Pantallas grandes / 4K - > 1536px */
+@media (min-width: 1536px) {}

@@ -1,0 +1,15 @@
+/* ESTILOS EN ANIMACIONES PARA TODAS LAS SECCIONES */
+
+/* INICIO (header) */
+/* Lista de redes sociales */
+.lista-redes-sociales > li > a:hover {
+    transform: scale(1.2);
+    background-color: var(--blanco);
+}
+
+/* Estilos del nav */
+.link-nav:hover {
+    transform: translateY(-3px);
+    color: var(--negro);
+    background-color: var(--blanco);
+}

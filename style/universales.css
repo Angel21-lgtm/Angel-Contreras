@@ -1,0 +1,63 @@
+/* ESTILOS UNIVERSALES PARA TODAS LAS ETIQUETAS, CLASES Y ID'S */
+
+*,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    cursor: none;
+}
+
+:root {
+    --blanco: #F2E6E6;
+    --gris: #333;
+    --verde: #0f0;
+    --negro: #222;
+}
+
+
+body {
+    background-color: var(--negro);
+    background-image: linear-gradient(to right, var(--gris) 1px, transparent 1px), linear-gradient(to bottom, var(--gris) 1px, transparent 1px);
+    background-size: 40px 40px;
+    overflow-x: hidden;
+}
+
+#inicio,
+#sobre-mi,
+#portafolio,
+#habilidades,
+#contacto {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    padding: 10px;
+    font-weight: 900;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+button {
+    color: var(--blanco);
+}
+
+a, button {
+    transition: all 0.3s;
+}
+
+svg {
+    z-index: -1;
+}

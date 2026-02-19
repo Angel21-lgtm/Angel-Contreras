@@ -1,0 +1,44 @@
+/* ESTILOS Y ANIMACIONES DEL CURSOR */
+
+/* Contenedor del cursor */
+#cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--verde);
+    border-left: 5px solid var(--verde);
+    transform-origin: top;
+    transform: translate(10px, 5px) rotate(15deg) scale(0);
+    transition: all .1s;
+    filter: drop-shadow(0 0 5px var(--verde)) drop-shadow(0 0 15px var(--verde)) drop-shadow(0 0 35px var(--verde)) hue-rotate(60deg);
+    pointer-events: none;
+    z-index: 1000;
+}
+
+#cursor::before {
+    content: "";
+    position: absolute;
+    left: -2.5px;
+    width: 5px;
+    height: 30px;
+    background-color: var(--verde);
+    transform-origin: top;
+    transform: rotate(315deg);
+}
+
+body:hover #cursor {
+    transform: translate(-1px, 5px) rotate(15deg) scale(1);
+}
+
+.element {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: var(--verde);
+    font-size: 1em;
+    pointer-events: none;
+    width: 10px;
+    height: 10px;
+    transition: 1s;
+    filter: drop-shadow(0 0 5px var(--verde)) drop-shadow(0 0 15px var(--verde)) hue-rotate(60deg);
+    z-index: 1000;
+}
