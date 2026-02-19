@@ -6,7 +6,9 @@
     src: url("../fuentes/Oswald/static/Oswald-Bold.ttf");
 }
 
-h1 {
+h1, 
+h2, 
+h3 {
     font-family: "Encabezados";
     letter-spacing: 2px;
 }

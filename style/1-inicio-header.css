@@ -1,10 +1,5 @@
 /* ESTILOS DEL ENCABEZADO DE LA WEB (header) */
 
-/* Etiqueta header */
-#inicio {
-    padding: 8rem 0 8rem 0;
-}
-
 /* Etiqueta svg */
 .svg-cabecera {
     position: absolute; 
@@ -51,21 +46,14 @@
 }
 
 /* Sección principal del header */
-.seccion-header {
-    max-width: 1200px;
-    padding: 1rem;
-    margin: auto;
-    gap: 10px;
-}
-
-.seccion-header > article {
+.secciones-y-articulos-contenedores > article {
     padding: 1rem;
     max-width: 800px;
     gap: 10px;
 }
 
 h1, 
-.seccion-header > article p {
+.secciones-y-articulos-contenedores > article p {
     padding: 1rem 1.5rem 2rem 0;
     max-width: 400px;
     position: relative;
