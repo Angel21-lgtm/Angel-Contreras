@@ -15,7 +15,7 @@
 
 /* 2. Aplicar la animación al elemento */
 .translate-y-opacity-left {
-  animation: translate-y-opacity-left linear 2s;
+  animation: translate-y-opacity-left linear 3s;
   animation-timeline: view(); /* Vincula al scroll */
   animation-range: entry 10% cover 40%; /* Cuándo animar */
 }
