@@ -54,30 +54,12 @@
 
 h1, 
 .secciones-y-articulos-contenedores > article p {
-    padding: 1rem 1.5rem 2rem 0;
     max-width: 400px;
     position: relative;
 }
 
 h1 {
     margin-bottom: 1.5rem;
-}
-
-h1::after {
-    content: attr(data-text);
-    padding: 1.5rem 1.5rem 1.5rem 0;
-    max-width: 400px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -45%;
-    transform: scaleY(-1);
-    filter: blur(1px);
-    opacity: 0.4;
-    mask-image: linear-gradient(to bottom,rgba(0,0,0,0.4),rgba(0,0,0,0));
-    -webkit-mask-image: linear-gradient(to bottom,rgba(0,0,0,0.4), rgba(0,0,0,0));
-    pointer-events: none;
-    z-index: -1;
 }
 
 .saludo, .saludo img {

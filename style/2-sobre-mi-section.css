@@ -7,29 +7,70 @@
     gap: 10px;
 }
 
-.contenedor-habilidades article {
+.contenedor-habilidades .javascript {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url("../img/sobre\ mi/javascript.jpg");
+}
+
+.contenedor-habilidades .node {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url("../img/sobre\ mi/node.jpg");
+}
+
+.contenedor-habilidades .php {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url("../img/sobre\ mi/php.jpg");
+}
+
+.contenedor-habilidades .python {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url("../img/sobre\ mi/python.jpg");
+}
+
+.contenedor-habilidades .javascript,
+.contenedor-habilidades .node,
+.contenedor-habilidades .php,
+.contenedor-habilidades .python {
+    height: 250px;
     font-size: small;
     border-radius: 5px;
-    background-color: var(--gris);
-    transition: all 0.5s;
+    transition: all 0.32s;
     box-shadow: 0 0 3px 1px rgb(22, 22, 22);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.contenedor-habilidades .javascript::before,
+.contenedor-habilidades .node::before,
+.contenedor-habilidades .php::before,
+.contenedor-habilidades .python::before {
+    content: "Click";
+    position: absolute;
+    top: calc(50% - 15px);
+    right: calc(50% - 25px);
+    width: 25px;
+    height: 15px;
+    padding: 10px 20px;
+    color: var(--blanco);
+    font-weight: 900;
+    font-size: large;
+    font-family: "Párrafos";
+    border: solid 2px var(--blanco);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
 }
 
 .contenedor-habilidades article h3 {
     color: var(--verde);
     padding: 10px;
     font-size: medium;
+    opacity: 0.5;
 }
 
 .contenedor-habilidades article p {
     color: var(--blanco);
     padding: 10px;
+    font-weight: 900;
     font-size: small;
-}
-
-.contenedor-habilidades article div, 
-.contenedor-habilidades article div img {
-    display: block;
-    width: 100%;
-    max-height: 200px;
+    opacity: 0.5;
 }
