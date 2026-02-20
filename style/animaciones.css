@@ -1,12 +1,14 @@
 /* ESTILOS EN ANIMACIONES PARA TODAS LAS SECCIONES */
 
 /* scroll */
+/* left */
 /* 1. Definir la animación */
 @keyframes translate-y-opacity-left {
   from {
     opacity: 0;
-    transform: translateX(-10%);
+    transform: translateX(-20%);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -15,9 +17,64 @@
 
 /* 2. Aplicar la animación al elemento */
 .translate-y-opacity-left {
-  animation: translate-y-opacity-left linear 3s;
-  animation-timeline: view(); /* Vincula al scroll */
-  animation-range: entry 10% cover 40%; /* Cuándo animar */
+  animation: translate-y-opacity-left 2s;
+}
+
+/* right */
+/* 1. Definir la animación */
+@keyframes translate-y-opacity-right {
+  from {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 2. Aplicar la animación al elemento */
+.translate-y-opacity-right {
+  animation: translate-y-opacity-right 1.5s;
+}
+
+/* top */
+/* 1. Definir la animación */
+@keyframes translate-y-opacity-top {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 2. Aplicar la animación al elemento */
+.translate-y-opacity-top {
+  animation: translate-y-opacity-top 2.3s;
+}
+
+/* bottom */
+/* 1. Definir la animación */
+@keyframes ranslate-y-opacity-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 2. Aplicar la animación al elemento */
+.translate-y-opacity-bottom {
+  animation: ranslate-y-opacity-bottom 2.2s;
 }
 
 /* INICIO (header) */
@@ -36,4 +93,7 @@
 
 /* SOBRE MÍ (section) */
 
-
+/* SOBRE MI (section) */
+.contenedor-habilidades article:hover {
+  transform: scale(1.05);
+}

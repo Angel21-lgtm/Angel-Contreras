@@ -1,7 +1,22 @@
 /* ESTILOS RECICLADOS */
+
+/* Texto en contenedores span */
+.texto-span-verde {
+        color: var(--verde);
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+/* Contenedores de los artículos */
 .secciones-y-articulos-contenedores {
     max-width: 1200px;
     padding: 1rem;
     margin: auto;
     gap: 10px;
+}
+
+/* Dos columnas mínimo de 250 px */
+.grid-2-columns-1fr {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }

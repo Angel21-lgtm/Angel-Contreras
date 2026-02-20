@@ -45,18 +45,29 @@ const main = () => {
 
     // scroll
     const scroll = () => {
-        const elementos = document.querySelectorAll(".animacion-scroll-left");
+        const elementosLeft = document.querySelectorAll(".translate-y-opacity-left");
+        const elementosRight = document.querySelectorAll(".translate-y-opacity-right");
+        const elementosTop = document.querySelectorAll(".translate-y-opacity-top");
+        const elementosBottom = document.querySelectorAll(".translate-y-opacity-bottom");
 
-        window.addEventListener("scroll", () => {
-            elementos.forEach(elemento => {
-                const propiedades = elemento.getBoundingClientRect();
-                if(!(propiedades.top < window.innerHeight)) {
-                    elemento.classList.remove("translate-y-opacity-left");
-                } else {
-                    elemento.classList.add("translate-y-opacity-left");
-                }
+        
+        const addClass = (elemento, clase) => {
+            window.addEventListener("scroll", () => {
+                elemento.forEach(elementoLeft => {
+                    const propiedades = elementoLeft.getBoundingClientRect();
+                    if(!(propiedades.top < window.innerHeight)) {
+                        elementoLeft.classList.remove(clase);
+                    } else {
+                        elementoLeft.classList.add(clase);
+                    }
+                });
             });
-        });
+        }
+
+        addClass(elementosLeft, "translate-y-opacity-left");
+        addClass(elementosRight, "translate-y-opacity-right");
+        addClass(elementosTop, "translate-y-opacity-top");
+        addClass(elementosBottom, "translate-y-opacity-bottom");
     }
 
     scroll();

@@ -1,2 +1,35 @@
 /* ESTILOS DE LA SECCIÓN SOBRE MÍ DE LA WEB (section) */
 
+/* Contenedor de habilidades */
+.contenedor-habilidades {
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.contenedor-habilidades article {
+    font-size: small;
+    border-radius: 5px;
+    background-color: var(--gris);
+    transition: all 0.5s;
+    box-shadow: 0 0 3px 1px rgb(22, 22, 22);
+}
+
+.contenedor-habilidades article h3 {
+    color: var(--verde);
+    padding: 10px;
+    font-size: medium;
+}
+
+.contenedor-habilidades article p {
+    color: var(--blanco);
+    padding: 10px;
+    font-size: small;
+}
+
+.contenedor-habilidades article div, 
+.contenedor-habilidades article div img {
+    display: block;
+    width: 100%;
+    max-height: 200px;
+}

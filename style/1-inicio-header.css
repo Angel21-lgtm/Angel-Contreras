@@ -86,12 +86,6 @@ h1::after {
     height: 25px;
 }
 
-.secciones-y-articulos-contenedores > article p span {
-    color: var(--verde);
-    font-weight: 900;
-    font-size: xx-large;
-}
-
 /* Imágen de presentación del header */
 .imagen-principal-header {
     max-width: 400px;
