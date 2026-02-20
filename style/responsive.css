@@ -3,6 +3,7 @@
 /* 1. Móviles pequeños (y base) - < 480px */
 @media (min-width: 320px) and (max-width: 479px) {
     /* HEADER */
+    
     /* Imágen de presentación del header */
     .imagen-principal-header {
         max-width: 300px !important;
@@ -10,12 +11,24 @@
 
     .imagen-principal-header img {
         max-width: 300px !important;
+    }
+
+    /* Estilos del nav */
+    nav, 
+    nav > ul {
+        width: 60%;
+    }
+
+    .link-nav {
+        padding: 0.7rem 7px !important;
+        font-size: small;
     }
 }
 
 /* 2. Móviles grandes / Teléfonos apaisados - 480px a 767px */
 @media (min-width: 480px) and (max-width: 767px) {
     /* HEADER */
+    
     /* Imágen de presentación del header */
     .imagen-principal-header {
         max-width: 300px !important;
@@ -23,12 +36,24 @@
 
     .imagen-principal-header img {
         max-width: 300px !important;
+    }
+
+    /* Estilos del nav */
+    nav, 
+    nav > ul {
+        width: 60%;
+    }
+
+    .link-nav {
+        padding: 0.7rem 7px !important;
+        font-size: small;
     }
 }
 
 /* 3. Tablets / Ipads / Dispositivos pequeños - 768px a 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
     /* HEADER */
+    
     /* Imágen de presentación del header */
     .imagen-principal-header {
         max-width: 300px !important;
@@ -36,6 +61,17 @@
 
     .imagen-principal-header img {
         max-width: 300px !important;
+    }
+
+    /* Estilos del nav */
+    nav, 
+    nav > ul {
+        width: 60%;
+    }
+
+    .link-nav {
+        padding: 0.7rem 7px !important;
+        font-size: small;
     }
 }
 

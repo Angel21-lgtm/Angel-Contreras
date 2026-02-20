@@ -21,7 +21,7 @@ h2::after {
 
 /* Texto en contenedores span */
 .texto-span-verde {
-        color: var(--verde);
+    color: var(--verde);
     font-weight: 900;
     font-size: xx-large;
 }

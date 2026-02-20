@@ -45,6 +45,19 @@
     text-align: center;
 }
 
+.el-santuario-carnivoro a,
+.madre-tierra a {
+    color: var(--blanco);
+    text-shadow: 0 0 2px var(--negro);
+    font-weight: 900;
+    width: 100%;
+    display: inline-block;
+    margin: 3px 0;
+    border-top: solid 2px var(--gris);
+    border-bottom: solid 2px var(--gris);
+    transition: all 0.1s;
+}
+
 /* Sección principal del header */
 .secciones-y-articulos-contenedores > article {
     padding: 1rem;

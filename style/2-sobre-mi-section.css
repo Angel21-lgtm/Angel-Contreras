@@ -9,6 +9,7 @@
 
 .contenedor-habilidades .javascript {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url("../img/sobre\ mi/javascript.jpg");
+    transition: all 3s;
 }
 
 .contenedor-habilidades .node {
@@ -37,34 +38,12 @@
     position: relative;
 }
 
-.contenedor-habilidades .javascript::before,
-.contenedor-habilidades .node::before,
-.contenedor-habilidades .php::before,
-.contenedor-habilidades .python::before {
-    content: "Click";
-    position: absolute;
-    top: calc(50% - 15px);
-    right: calc(50% - 25px);
-    width: 25px;
-    height: 15px;
-    padding: 10px 20px;
-    color: var(--blanco);
-    font-weight: 900;
-    font-size: large;
-    font-family: "Párrafos";
-    border: solid 2px var(--blanco);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-}
-
 .contenedor-habilidades article h3 {
     color: var(--verde);
     padding: 10px;
     font-size: medium;
     opacity: 0.5;
+    transition: opacity 0.21;
 }
 
 .contenedor-habilidades article p {
@@ -73,4 +52,25 @@
     font-weight: 900;
     font-size: small;
     opacity: 0.5;
+    transition: opacity 0.21;
+}
+
+.boton-habilidades {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 35px);
+    width: 70px;
+    height: 15px;
+    padding: 20px;
+    color: var(--blanco);
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 15px;
+    border: solid 2px var(--blanco);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: all 0.21s linear;
 }
