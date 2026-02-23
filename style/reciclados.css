@@ -39,3 +39,15 @@ h2::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+
+/* Redes sociales y sus botones */
+.lista-redes-sociales {
+    gap: 5px;
+    padding-bottom: 5px;
+}
+
+.lista-redes-sociales > li, 
+.lista-redes-sociales > li > a {
+    border-radius: 3px;
+    background-color: var(--gris);
+}

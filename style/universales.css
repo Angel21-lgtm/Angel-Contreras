@@ -12,9 +12,9 @@ html {
 }
 
 :root {
-    --blanco: #F2E6E6;
+    --blanco: #e8dfdf;
     --gris: #333;
-    --verde: #0f0;
+    --verde: #1fbf1f;
     --negro: #222;
 }
 
@@ -28,7 +28,7 @@ body {
 #inicio,
 #sobre-mi,
 #portafolio,
-#habilidades,
+#servicios,
 #contacto {
     width: 100%;
     min-height: 100vh;
@@ -60,6 +60,16 @@ p,
 a,
 button {
     color: var(--blanco);
+}
+
+button {
+    border-radius: 2px;
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--gris);
+    position: relative;
+    transition: all 0.3s;
+    display: block;
 }
 
 p {

@@ -77,18 +77,25 @@
   animation: ranslate-y-opacity-bottom 2.2s;
 }
 
+/* Lista de redes sociales */
+.lista-redes-sociales > li > a:hover {
+    transform: scale(1.2);
+    background-color: var(--blanco);
+}
+
+/* Botones */
+button:hover {
+  background-color: var(--blanco);
+  color: var(--negro);
+  transform: translateY(-3px);
+}
+
 /* INICIO (header) */
 
 /* Artículo de publicidad aside */
 .el-santuario-carnivoro:hover a,
 .madre-tierra:hover a {
   transform: scale(1.021);
-}
-
-/* Lista de redes sociales */
-.lista-redes-sociales > li > a:hover {
-    transform: scale(1.2);
-    background-color: var(--blanco);
 }
 
 /* Estilos del nav */
@@ -100,47 +107,7 @@
 
 /* SOBRE MÍ (section) */
 
-/* SOBRE MI (section) */
-.contenedor-habilidades article:hover {
-  transform: scale(1.05);
-}
-
-.contenedor-habilidades article:hover h3,
-.contenedor-habilidades article:hover p {
-    opacity: 1;
-}
-
-.contenedor-habilidades article:hover button {
-  transform: scale(1.1);
-  box-shadow: 0 0 3px 1px rgb(16, 15, 15);
-  border-color: var(--verde);
-  color: var(--verde);
-  filter: drop-shadow(0 0 5px var(--verde)) drop-shadow(0 0 15px var(--verde)) drop-shadow(0 0 35px var(--verde)) hue-rotate(60deg);
-  font-weight: 900;
-  font-size: 18px;
-  border-width: 3px;
-}
-
-.contenedor-habilidades article button:active {
-  font-weight: 700;
-  font-size: 15px;
-  border-width: 2px;
-  transform: scale(1);
-}
-
-
-.contenedor-habilidades .javascript:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0)), url("../img/sobre\ mi/javascript.jpg");
-}
-
-.contenedor-habilidades .node:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0)), url("../img/sobre\ mi/node.jpg");
-}
-
-.contenedor-habilidades .php:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0)), url("../img/sobre\ mi/php.jpg");
-}
-
-.contenedor-habilidades .python:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0)), url("../img/sobre\ mi/python.jpg");
+/* Tarjetas de presentación */
+.card:hover {
+  transform: scale(1.02) translateY(-5px);
 }

@@ -95,20 +95,13 @@ h1 {
 }
 
 /* Lista de redes sociales */
-.lista-redes-sociales {
-    gap: 10px;
-    padding-bottom: 5px;
-}
-
-.lista-redes-sociales > li, 
+#inicio .lista-redes-sociales > li, 
 .lista-redes-sociales > li > a {
     width: 3rem;
     height: 3rem;
-    border-radius: 5px;
-    background-color: var(--gris);
 } 
 
-.lista-redes-sociales > li > a > img {
+#inicio .lista-redes-sociales > li > a > img {
     width: 2rem;
     height: 2rem;
 }
