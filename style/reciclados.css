@@ -9,21 +9,36 @@ h2::after {
     height: 100%;
     position: absolute;
     left: 0;
-    bottom: -40%;
+    bottom: -50%;
     transform: scaleY(-1);
     filter: blur(1px);
     opacity: 0.4;
     mask-image: linear-gradient(to bottom,rgba(0,0,0,0.4),rgba(0,0,0,0));
     -webkit-mask-image: linear-gradient(to bottom,rgba(0,0,0,0.4), rgba(0,0,0,0));
     pointer-events: none;
-    z-index: -1;
 }
+
+h1::before, 
+h2::before {
+    content: attr(data-text);
+    color: var(--verde);
+    z-index: -1;
+    padding: 1rem 1.5rem 2rem 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    filter: blur(2px);
+    pointer-events: none;
+}
+
 
 /* Texto en contenedores span */
 .texto-span-verde {
     color: var(--verde);
     font-weight: 900;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 /* Contenedores de los artículos */
@@ -34,10 +49,23 @@ h2::after {
     gap: 10px;
 }
 
-/* Dos columnas mínimo de 250 px */
-.grid-2-columns-1fr {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+/* Contenedores de texto y subtítulos */
+.contenedor-de-contenido-articulo-subtitulos-texto {
+    width: 90%;
+    padding: 5px;
+    text-align: center;
+    background-color: var(--gris);
+    margin: 8px;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 1px #111;
+}
+
+/* Íconos variables dentro del texto, párrafos, títulos, etc */
+.icono-variable, .icono-variable img {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
 }
 
 /* Redes sociales y sus botones */

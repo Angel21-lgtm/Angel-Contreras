@@ -10,7 +10,7 @@
     transform-origin: top;
     transform: translate(10px, 5px) rotate(15deg) scale(0);
     transition: all .1s;
-    filter: drop-shadow(0 0 5px var(--verde)) drop-shadow(0 0 15px var(--verde)) drop-shadow(0 0 35px var(--verde)) hue-rotate(60deg);
+    filter: drop-shadow(0 0 5px var(--verde)) drop-shadow(0 0 10px var(--verde)) drop-shadow(0 0 15px var(--verde)) hue-rotate(60deg);
     pointer-events: none;
     z-index: 1000;
 }

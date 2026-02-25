@@ -14,7 +14,8 @@ html {
 :root {
     --blanco: #e8dfdf;
     --gris: #333;
-    --verde: #1fbf1f;
+    --verde: #1da21d;
+    --filter-verde: drop-shadow(0 0 5px var(--verde)) drop-shadow(0 0 15px var(--verde)) drop-shadow(0 0 35px var(--verde)) hue-rotate(60deg);
     --negro: #222;
 }
 
@@ -36,44 +37,62 @@ body {
     position: relative;
 }
 
+#sobre-mi {
+    background-color: var(--gris);
+}
+
 h1,
 h2,
 h3 {
     font-weight: 900;
     position: relative;
-    font-size: 3rem;
+    padding: 1rem 1.5rem 2rem 0;
+    color: var(--blanco);
+    z-index: 0;
 }
 
 h1, 
 h2 {
-    padding: 1rem 1.5rem 2rem 0;
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
 }
 
 h3 {
     padding: 10px;
+    font-size: x-large;
 }
 
-h1,
-h2,
-h3,
 p,
 a,
 button {
     color: var(--blanco);
+    font-size: large;
 }
 
 button {
-    border-radius: 2px;
+    border-radius: 4px;
     border: none;
     padding: 0.5rem 1rem;
-    background-color: var(--gris);
+    background-color: var(--verde);
     position: relative;
     transition: all 0.3s;
-    display: block;
+    display: inline-block;
+    margin: 5px 0;
+    z-index: 0;
+    overflow: hidden;
 }
 
-p {
-    font-size: x-large;
+button::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    background-color: var(--blanco);
+    left: -100%;
+    top: 0;
+    z-index: -1;
+    transition: all 0.3s;
 }
 
 a, button {

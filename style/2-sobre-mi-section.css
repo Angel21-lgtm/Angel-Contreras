@@ -3,12 +3,12 @@
 /* Contenedor de habilidades */
 
 /* Artículo sobre mi descripción */
-#sobre-mi .secciones-y-articulos-contenedores article h2 {
-    margin-bottom: 1rem;
+#sobre-mi .secciones-y-articulos-contenedores h2 {
+    margin-bottom: 2rem;
 }
 
-#sobre-mi .secciones-y-articulos-contenedores article div {
-    gap: 10px;
+#sobre-mi .secciones-y-articulos-contenedores div {
+    gap: 15px;
 }
 
 /* Tarjetas de presentación */
@@ -41,13 +41,6 @@
 .card div img {
     width: 100%;
     height: 200px;
-}
-
-.card h3 {
-    font-size: x-large;
-    font-weight: 900;
-    color: var(--verde);
-    position: relative;
 }
 
 .card h3::after {

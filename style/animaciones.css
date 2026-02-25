@@ -85,9 +85,13 @@
 
 /* Botones */
 button:hover {
-  background-color: var(--blanco);
+  transform: translateY(-3px) scale(1.02);
   color: var(--negro);
-  transform: translateY(-3px);
+  box-shadow: 5px 8px 5px 2px #111111;
+}
+
+button:hover::before {
+  transform: translateX(100%) scale(1.02);
 }
 
 /* INICIO (header) */
